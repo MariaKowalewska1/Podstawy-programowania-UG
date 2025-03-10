@@ -10,6 +10,9 @@ namespace zadanie_1
     {
         static void Main(string[] args)
         {
+            //Napisać program wypisujący na ekranie tekst "Witaj Świecie".
+            Console.Write("Witaj Swiecie");
+            Console.ReadKey(true);
         }
     }
 }
