@@ -15,18 +15,24 @@ namespace zadanie._5
             *
             ** 
             ***/
-            double n;
-            Console.WriteLine("Podaj liczbe naturalna n wieksza od 1: ");
-            n = Convert.ToDouble(Console.ReadLine());
-            int i, j;
-            for (i = 1; i <= n; i++) 
+            Console.WriteLine("Podaj liczbe n>1: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            if (n<1)
             {
-                for (j = 1; j<= i; j++)
+                Console.WriteLine("n jest mniejsze od 1");
+                return;
+            }
+            for (int i = 1; i<=n; i++)
+            {
+               for (int j=2; j<=i; j++)//XDD nie wiem czemu od 2 ale dziala
+                {
                     Console.Write("*");
-                Console.WriteLine("");
+
+                }
+                Console.WriteLine("*");
+               
             }
             Console.ReadKey(true);
-
 
         }
     }

@@ -13,14 +13,24 @@ namespace zadanie._6
              *
             ***
            ***** */
-            int i, j, n;
-            Console.WriteLine("Podaj liczbe naturalna n wieksza od 1: ");
-            n = Convert.ToInt32(Console.ReadLine());
-            for (i=1;i<=n;i++)
+            Console.WriteLine("Podaj wysokosc trojkata, wieksza od 1: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            if (n<1)
             {
-                for (j = 1; j <= n-i; j++) Console.Write(" ");
-                for (j = 1; j <= 2*i-1; j++) Console.Write("*");
-                Console.WriteLine("");
+                Console.WriteLine("n jest mniejsze, lub rowne 1");
+                return;
+            }
+            for (int i=1; i<=n; i++)
+            {
+                for (int k=1; k<=n-i; k++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j=2; j<=2*i-1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("*");
             }
             Console.ReadKey(true);
         }

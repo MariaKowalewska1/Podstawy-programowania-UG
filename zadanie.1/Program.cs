@@ -12,16 +12,17 @@ namespace zadanie._1
         {
             //Napisać program wypisujący na ekranie kolejne liczby całkowite od 11 do 33. Użyj pętli for. 
 
-            int i;
-            for (i = 11; i <= 33; i++)
+            for (int i = 11; i <= 33; i++)
             {
-                Console.Write("{0}", i);
-                if (i < 33)
-                    Console.Write(" ,");
+                if (i==11)
+                {
+                    Console.Write(""+ i);
+                }
+                else 
+                    Console.Write(", " + i);
+                
             }
-                Console.ReadKey(true);
-            
-            
+            Console.ReadKey(true);//kod napisany 100pro ja
 
         }
     }

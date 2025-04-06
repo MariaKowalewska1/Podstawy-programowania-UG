@@ -11,14 +11,19 @@ namespace zadanie._7
         static void Main(string[] args)
         {
             //Spośród liczb od 1 do 100 wypisz na ekranie wszystkie liczby podzielne przez 13. Użyj pętli
-            int i;
-            for (i = 1; i <= 100; i++)
+            for (int i = 1; i <= 100; i++)
             {
-                if (i % 13 == 0)
-                    Console.Write("{0}, ", i);
+                if (i == 13)
+                {
+                    Console.Write(""+i);
+                }
+                else if (i % 13 == 0)
+                {
+                    Console.Write("," + i);
+                }
+
             }
-                Console.ReadKey(true);
-            }
+            Console.ReadKey(true);
         }
-    }
+    }    }
 

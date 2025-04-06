@@ -14,24 +14,20 @@ namespace zadanie._2
             potęgi n) i wypisujący wynik na ekranie w formacie(np.dla n = 10) : 2 ^ 10 = 1024.Do obliczenia
             wartości wyrażenia użyj pętli for.*/
 
-            int n;
-            Console.WriteLine("Podaj wartość liczby naturalnej n: ");
-            n = Convert.ToInt32(Console.ReadLine());
-
-            if (n < 0) 
+            int wynik = 1;//wynik musi sie rownac 2 bo wynik pierwszej iteracji to 1 - 2^0=1
+            Console.WriteLine("Podaj n>=0: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            if (n<0)
             {
-                Console.WriteLine("To nie jest liczba naturalna");
+                Console.WriteLine("n jest mniejsze od 0");
                 return;
             }
-            
-            int wynik = 1;
-            for (int i = 0; i < n; i++) 
+            for (int i = 1; i <= n; i++)
             {
-                wynik = wynik * 2;
+                wynik *= 2;//to jest wynik=wynik z poprzedniej iteracji * 2, czyli jak n=3 to it1=2*1=2, it2=2*2=4, it3=2*4=8
             }
-            Console.WriteLine("2^{0}={1}",n,wynik);
+            Console.WriteLine("2^{0}={1}", n, wynik);//musi byc poza petla zeby wypisalo tylko ostatni wynik
             Console.ReadKey(true);
-
         }
     }
 }
