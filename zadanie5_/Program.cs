@@ -16,12 +16,13 @@ ekranie. Użyj pętli do-while*/
             int x;
             do
             {
-                Console.Write("Podaj liczbe x: ");
+                Console.Write("Podaj liczbe rzeczywista: ");
                 x = Convert.ToInt32(Console.ReadLine());
-            } while (x <= 0);
-            Console.WriteLine("Wczytano liczbe x = {0}", x);
-            Console.ReadKey(true);
 
+            }
+            while (x <= 0);//gdy wpisze sie liczbe dodatnia, ten warunek przestanie byc prawdziwy - petla sie zakonczy
+            Console.WriteLine("Wczytano liczbe rzeczywista dodatnia: {0}",x);
+            Console.ReadKey(true);
         }
     }
 }

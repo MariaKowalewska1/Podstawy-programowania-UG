@@ -14,16 +14,27 @@ namespace zadanie4_
             *****
             *****
             ***** */
+
             int n, k, i, j;
-            Console.WriteLine("Podaj liczbe n: ");
+            Console.Write("Podaj ilosc wierszy prostokata: ");
             n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Podaj liczbe k: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("Ilosc wierszy musi byc wieksza niz 0");
+                return;
+            }
+            Console.Write("Podaj ilosc kolumn prostokata: ");
             k = Convert.ToInt32(Console.ReadLine());
+            if (k <= 0)
+            {
+                Console.WriteLine("Ilosc kolumn musi byc wieksza od 0");
+                return;
+            }
             i = 1;
             while (i <= n)
             {
                 j = 1;
-                    while (j <= k)
+                while (j <= k)
                 {
                     Console.Write("*");
                     j++;
@@ -31,6 +42,8 @@ namespace zadanie4_
                 Console.WriteLine("");
                 i++;
             }
+            Console.ReadKey(true);
+            }
         }
     }
-}
+

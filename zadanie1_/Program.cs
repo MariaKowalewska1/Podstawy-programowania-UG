@@ -11,19 +11,30 @@ namespace zadanie1_
         static void Main(string[] args)
         {//Wczytaj z klawiatury dwie liczby naturalne a i b (0<a<b). Wyznacz wszystkie liczby parzyste z przedziału [a, b].Użyj pętli while
 
-            double a, b, i;
+            int a, b, i;
             Console.WriteLine("Podaj liczbe a, wieksza od 0: ");
-            a = Convert.ToDouble(Console.ReadLine());
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a < 0)
+            {
+                Console.Write("Liczba a jest mniejsza od 0");
+                return;
+            }
             Console.WriteLine("Podaj liczbe b, wieksza od a: ");
-            b = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            if (b < a)
+            {
+                Console.Write("Liczba b jest mniejsza od liczby a");
+                return;
+            }
             i = a;
             while (i <= b)
-                {
-                if (i % 2 == 0) Console.Write("{0}, ", i);
+            {
+                if (i == 2) Console.Write("" + i);
+                else if
+                    (i % 2 == 0) Console.Write(", "+i);
                 i++;
             }
-            Console.ReadKey(true);
-
+            Console.ReadKey(true);   
         }
     }
 }
