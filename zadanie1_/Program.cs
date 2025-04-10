@@ -26,7 +26,7 @@ namespace zadanie1_
                 Console.Write("Liczba b jest mniejsza od liczby a");
                 return;
             }
-            i = a;
+            i = a;//wartosc pierwszej iteracji to a 
             while (i <= b)
             {
                 if (i == 2) Console.Write("" + i);
