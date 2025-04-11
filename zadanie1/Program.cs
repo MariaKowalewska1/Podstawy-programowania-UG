@@ -11,13 +11,11 @@ namespace zadanie1
         static void Main(string[] args)
         {
             //Napisać program wczytujący liczbę całkowitą i wypisujący na ekranie informację czy jest to liczba parzysta, czy też nieparzysta
-            Double a;
-            Console.WriteLine("Podaj liczbe: ");
-            a = Convert.ToDouble(Console.ReadLine());
-            if (a % 2.0 == 0)
-                Console.WriteLine("Liczba jest parzysta");
-            else
-                Console.WriteLine("Liczba jest nieparztsta");
+            Console.Write("Podaj liczbe calkowita: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            if (n % 2 == 0) Console.WriteLine("Podana liczba jest parzysta");
+            else Console.WriteLine("Podana liczba jest nieparzysta");
+            Console.ReadKey(true);
 
 
 

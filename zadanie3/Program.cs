@@ -12,30 +12,24 @@ namespace zadanie3
         static void Main(string[] args)
         {
             //Napisać program wczytujący trzy liczby i wypisujący na ekranie wartość najmniejszej i największej z tych liczb
-            Double a, b, c;
-            Console.WriteLine("Podaj liczbe a: ");
-            a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Podaj liczbe b: ");
-            b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Podaj liczbe c: ");
-            c = Convert.ToDouble(Console.ReadLine());
-            if ((a > b) && (a > c))
-                Console.Write("Licbza a jest największa ");
-            else if ((b > a) && (b >c))
-                Console.Write("Liczba b jest najwieksza ");
-            else
-                Console.Write("Liczba c jest najwieksza ");
-            if ((a < b) && (a < c))
-                Console.Write("Liczba a jest najmniejsza ");
-            else if ((b < a) && (b < c))
-                Console.Write("Liczba b jest najmniejsza ");
-            else
-                Console.Write("Liczba c jest najmniejsza ");
-           
+            int a, b, c;
+            Console.Write("Podaj pierwsza liczbe: ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Podaj druga liczbe: ");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Podaj trzecia liczbe: ");
+            c = Convert.ToInt32(Console.ReadLine());
+            if ((a > b) && (a > c)) Console.WriteLine("Liczba a jest najwieksza z podanych");
+            else if ((b > c) && (b > a)) Console.WriteLine("Liczba b jest najwieksza z podanych");
+            else  Console.WriteLine("Liczba c jest najwieksza z podanych");
+            if ((a < b) && (a < c)) Console.WriteLine("Liczba a jest najmniejsza z podanych");
+            else if ((b < a) && (b < c)) Console.WriteLine("Liczba b jest najmniejsza z podanych");
+            else Console.WriteLine("Liczba c jest najmniejsza z podanych");
+            Console.ReadKey(true);
 
 
-                
-            
+
+
 
         }
     }
