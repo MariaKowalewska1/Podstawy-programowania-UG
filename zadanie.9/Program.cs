@@ -16,7 +16,7 @@ namespace zadanie._9
             {
                 for (j=1; j<=10; j++)//kolumny
                 {
-                    Console.Write("{0,3}", i * j);//wartosc wprowadzana do 0 ma zajac przynajmniej 3 znaki, wtedy rowno i ladnie
+                    Console.Write("{0,3}",i * j);//wartosc wprowadzana do 0 ma zajac przynajmniej 3 znaki, wtedy rowno i ladnie
                 }
                 Console.WriteLine(" ");
             }
