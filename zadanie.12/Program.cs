@@ -25,7 +25,7 @@ Oto wydruk dla wysokości h=6:
             {
                 for (int j=1; j<=i; j++)//j liczba kolumn
                 {
-                    Console.Write(i * j+ " ");// + " " żeby po każdej liczbie była spacja
+                    Console.Write(i * j + " ");//zeby po kazdej cyfrze byla spacja
                 }
                 Console.WriteLine(" ");//przejscie do kolejnego wiersza
 

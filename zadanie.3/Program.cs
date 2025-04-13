@@ -20,7 +20,7 @@ namespace zadanie._3
                 Console.WriteLine("n jest mniejszy od 2");
                 return;
             }
-            for (int i = 0; i<=n; i++)
+            for (int i = 1; i<=n; i++)
             {
                 suma += i;//suma = suma z poprzedniej teracji + kolejna liczba
             }
