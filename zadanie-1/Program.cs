@@ -12,20 +12,24 @@ namespace zadanie_1
         { //Napisać program wczytujący ciąg n (1<=n<=1000) liczb całkowitych (dodatnich i ujemnych) i wypisujący wczytane liczby na ekranie.
             int[] tab = new int[1000];
             int i, n;
-            Console.WriteLine("Podaj liczbe elementow ciagu mniejsza od 1000: ");
+            Console.Write("Podaj ilosc elementow tablicy, mniejsza lub rowna 1000: ");
             n = Convert.ToInt32(Console.ReadLine());
-            for (i = 0; i<n; i++)
+            if (n>1000)
+                {
+                Console.WriteLine("Ilosc elementow tablicy musi byc mniejsza lub rowna 1000");
+                return;
+            }
+            for (i = 0; i<n;i++)
             {
-                Console.WriteLine("Podaj tab[{0}]: ",i);
+                Console.Write("tab[{0}]= ", i);
                 tab[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Console.WriteLine("Elementy tablicy: ");
-            for (i = 0; i<n; i++)
+            Console.Write("Elementy tablicy: ");
+            for (i=0;i<n;i++)
             {
                 Console.Write("{0}, ", tab[i]);
             }
             Console.ReadKey(true);
-
         }
     }
 }

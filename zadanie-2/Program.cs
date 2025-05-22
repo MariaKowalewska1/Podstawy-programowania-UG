@@ -14,17 +14,18 @@ namespace zadanie_2
 
             int[] tab = new int[1000];
             int i, n;
-            Console.WriteLine("Podaj liczbe elementow ciagu, mniejsza od 1000: ");
+            Console.Write("Podaj ilosc elementow tablicy, mniejsza lub rowna 1000: ");
             n = Convert.ToInt32(Console.ReadLine());
-            for (i = 0; i<n; i++)
+            for (i=0;i<n;i++)
             {
-                Console.WriteLine("Podaj tab[{0}]", i);
+                Console.Write("tab[{0}]= ", i);
                 tab[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Console.WriteLine("Elementy tablicy: ");
-            for (i = n-1; i>=0; i--)
+            Console.Write("Elementy tablicy: ");
+            for (i=n-1;i>=0;i--)
+      //nieoze byc i=n bo tablice maja o 1 mniej miejsce niz n , dla n=3, tablica ma takie wyrazy: tab[0],tab[1],tab[2], wiec jesli i bedzie sie zaczynalo od n to da n wyrazowi wartosc 0
             {
-                Console.Write("{0}, ", tab[i]);
+                Console.WriteLine("{0}, ", tab[i]);
             }
             Console.ReadKey(true);
         }

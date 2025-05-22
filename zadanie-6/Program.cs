@@ -10,10 +10,11 @@ namespace zadanie_6
     {
         static void Main(string[] args)
         {//Zadeklaruj tablicę zawierającą nazwy dni tygodnia. Wypisz elementy tablicy za pomocą pętli foreach.
-            string[] dni= new string[] { "poniedziałek", "wtorek", "sroda", "czwartek", "piatek", "sobbota", "niedziela" };
-            foreach (string elem in dni)
+            string[] dnitygodnia = new string[] { "poniedzialek", "wtorek", "sroda", "czwartek", "piatek", "sobota", "niedziela" };
+            foreach (string elem in dnitygodnia)
                 Console.Write("{0}, ", elem);
             Console.ReadKey(true);
+
 
 
         }
