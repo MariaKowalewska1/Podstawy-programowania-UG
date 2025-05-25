@@ -9,30 +9,33 @@ namespace zad_kolo1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int odejmowanie(int[,] tab1, int[,] tab2, int wiersz, int kolumna)
         {//napisz metode ktora pokazuje wynik odejmowania wartosci wskazanej komorki dwoch tablic dwuwymiarowych
 
+            return tab1[wiersz, kolumna] - tab2[wiersz, kolumna];
 
-          int[,] tab1 = new int[2, 3] {//najpierw zadeklaruj rozmiar a potem wypisuj wyrazy
-                { 1,2,3 },
-                { 4,5,6 }
-            };
-            int[,] tab2 = new int[2, 3]
+
+
+        }
+        static void Main(string[] args)
+        {
+            int[,] tablica1 =
             {
-                { 7, 8, 9 },
-                { 10, 11, 12 }
+                { 1, 12, 32
+                },
+                { 23, 98, 76
+                }
             };
-            Console.Write("Podaj indeks wiersza z pierwszej tablicy: ");
-            int i1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Podaj indeks kolumny z pierwszej tablicy: ");
-            int j1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Podaj indeks wiersza z drugiej tablicy: ");
-            int i2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Podaj indeks kolumny z drugiej tablicy: ");
-            int j2 = Convert.ToInt32(Console.ReadLine());
-
-           
-            }
+            int[,] tablica2 =
+            {
+                { 45, 3, 98
+                },
+                { 22, 43, 91 }
+                
+            };
+            Console.Write("Wynik odejmowania tych dwoch elementow tablicy wynosi {0}", odejmowanie(tablica1, tablica2, 0, 1));
+                Console.ReadKey(true);
         }
 
-    } 
+    }
+}
